@@ -137,7 +137,7 @@ return new control(true, false);
 function createEventMarker(eventNum) {
 	var event = events[eventNum];
 	var icon = new GIcon();
-	icon.image = "http://bombsite.powweb.com/wp-content/logos/" + eventNum +".gif";
+	icon.image = "http://bombsite.powweb.com/logos/" + eventNum +".gif";
 	icon.iconSize = new GSize(18, 18);
 	icon.iconAnchor = new GPoint(12, 12);
 	icon.infoWindowAnchor = new GPoint(12, 0);
