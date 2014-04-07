@@ -1,0 +1,197 @@
+/*bootstrap override*/
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/*other things*/
+#header{
+  width: 100%;
+  background-color: white;
+  border: 5px solid #ff00b1;
+  -moz-box-shadow: 5px 5px 5px #ff00b1;
+  -webkit-box-shadow: 5px 5px 5px #ff00b1;
+  box-shadow: 5px 5px 5px #ff00b1;
+}
+
+#header h1{
+  color: #ff00b1;
+  font-weight: 800;
+  text-align: center;
+}
+
+#header p{
+  text-align: center;
+  text-transform: uppercase;
+}
+#header a{
+  color: #ff00b1;
+}
+#header a:hover{
+  color: black;
+}
+
+
+#map{
+  position: relative;
+  height: 90%;
+/*  bottom:0;*/
+  width:100%;
+  left:0;
+}
+#directionsWrap{
+  background-color: white;
+  max-height: 25%;
+  overflow: auto;
+  position:fixed;
+  bottom: 0;  
+  width: 100%;
+  /*z-index:2;*/
+}
+
+#directions {
+  overflow:auto;
+  background-color:#fff;
+}
+
+#eventMarkers {
+  overflow:hidden;
+  max-height:10px;
+}
+
+#guidelink h1, #ffd h1{
+  color:#ff00b1;
+  margin:12px 0 4px 0;
+  padding:0;
+  text-align:center;
+  font-size:15px;
+  font-family:helvetica, arial, sans-serif;
+}
+
+
+.mapContainer{
+  display:block;
+  position:relative;
+  width:400px;
+  margin:-10px 0 0 -11px;
+  background-color:#fff;
+  padding:1px 0 0 0;
+}
+
+.mapheader{  
+  margin:10px 0 0 0;
+
+}
+.mapBody{
+  padding:3px 23px 0 9px;
+  max-height:320px;
+  min-height:320px;
+  overflow:auto;
+}
+
+.img-shadow {
+  float:left;
+  width:400px;
+  min-height:360px;
+  background: url(http://bombsite.powweb.com/logos/topshadow.png) no-repeat bottom right;
+  margin:10px 0 0 10px;
+  }
+
+#center{
+  text-align:center;
+}
+#headline{
+  font-family:helvetica, arial, sans-serif;
+  position:absolute;
+  top:710px;
+  z-index:2;
+  font-size:30px;
+  width:100%;
+  text-align:center;
+  color:#000;
+  text-decoration:underline;
+}
+
+#event1, #event2, #event3, #event4, #event5, #event6, #event7, #event8, #event9, #event10, #event11, #event12, #event13, #event14, #event15, #event16, #event17, #event18, #event19, #event20{
+  border-top:0px none #fff;
+  width:400px;
+}
+
+.infoWindowContent {
+  border-top:1px solid #CDCDCD;
+  margin:0 0 30px 0;
+  padding:2px 0 0 0;
+  max-height:400px;
+  overflow:auto;
+  
+}
+
+.sideContent, .sideBar, .sideBarsmall {
+  border-top:1px solid #CDCDCD;
+  margin:0 0 30px 0;
+  padding:2px 0 0 0;
+}
+
+.sidecontent h2, .infoWindowContent h2{
+  font-family:helvetica, arial, sans-serif;
+  font-size:15px;
+  font-weight:normal;
+  margin:0;
+  padding:0;
+}
+
+
+.sidecontent h2 a, .infoWindowContent h2 a{
+  color:#ff00b1;
+}
+
+.sideBar h2 a {
+  color:#ff00b1;
+  font-family:helvetica, arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  margin:0;
+  padding:0;
+}
+
+.sidecontent p, .infoWindowContent p{
+  font-family:helvetica, arial, sans-serif;
+  font-size:15px;
+  margin:20px 0 0 0;
+  padding:0;
+}
+
+.sideBar p{
+  font-family:helvetica, arial, sans-serif;
+  font-size:13px;
+  margin:5px 0 0 0;
+  padding:0;  
+}
+
+.sideBarsmall p{
+  font-family:helvetica, arial, sans-serif;
+  font-size:13px;
+  margin:25px 0 0 0;
+  padding:0;  
+}
+
+.sideBar p.pink, .sidecontent p.pink, .infoWindowContent p.pink{
+  text-decoration:underline;
+  color:#ff00b1;
+  
+}
+.sideBar p.pink a,.sidecontent p.pink a, .infoWindowContent p.pink a{
+  color:#000;
+  text-decoration:none;
+}
+
+.sideBar img, .sidecontent img, .infoWindowContent img{
+  display:block;
+  margin:10px 0 10px 0;
+}
+
+
+
+#pod_audio_1 {
+  margin-bottom: 5px;
+}

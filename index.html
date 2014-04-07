@@ -1,0 +1,1087 @@
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>BOMB's Summer Road Trip Map</title>
+
+<!-- bootstrap components in a desperate attempt to make this look less terrible -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAALbV-jKVyIRdXg_99IchOiRRNufXvIPiOuZ0FK-E0W0iHou6s7xRkitUpx0peCZmGh5Wk8L5bZX9e-w" type="text/javascript"></script>
+    <script type="text/javascript" src="mapad2013.js">
+    </script>
+<!-- <link rel="stylesheet" type="text/css" href="style.css" />
+ -->
+ <!-- custom css -->
+<link rel="stylesheet" href="_style.css">
+  </head>
+  <body onload="load()" onunload="GUnload()" onresize="boundsChanged()">
+	<body style="overflow: hidden">
+			<div class="row" id="header">
+			<div class="container">
+			<h1>BOMB SUMMER ROAD TRIP MAP</h1> 
+			<p>
+				<!-- here's a bunch of bespoke links that make me want to die inside -->
+
+				<a href="javascript:showwarhol(1)">The Andy Warhol Museum</a> |
+				<a href="showcamstl(5)">CONTEMPORARY ART MUSEUM ST. LOUIS</a> |
+				<a href="javascript:showdia(7)">DETROIT INSTITUTE OF THE ARTS</a> |
+				<a href="javascript:showicp(12)">International Center of Photography</a> |
+				<a href="javascript:showmenil(14)">THE MENIL COLLECTION</a> |
+				<a href="javascript:showparrish(18)">PARRISH ART MUSEUM</a> |
+				<a href="javascript:showsecca(21)">SOUTH EASTERN CENTER FOR CONTEMPORARY ART (SECCA)</a> |
+				</p>
+				</div>
+			</div> 
+			<div id="map"></div>
+			<div class="row" id="directionsWrap">
+				<div class="container">
+					<div id="directions" class="col-md-12">
+					</div>
+				</div>
+			</div>
+			
+
+<!--Event Windows, Why Would Anyone Write Code Like This, Why Why Why-->
+<div id="eventMarkers" class="infoWindow">
+
+<!--#1 Warhol-->		
+		<div id="event1">
+			<div class="infoWindowContent">
+				<h2><a href="">01</a> The Andy Warhol Museum</h2>
+				<p class="pink"><a href="http://www.warhol.org">www.warhol.org</a>	
+					<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/andywarhol.jpg" width="350px">
+					<p><strong>Genesis Breyer P-Orridge: S/HE IS HER/E</strong>
+					<p>Through September 15, 2013
+					<p>Reception: Sunday, July 15, 2012, 3–5pm
+					<p>	H/er first solo museum exhibition, <em>S/HE IS HER/E</em>, showcases the breadth of P-Orridge’s art practice through over 100 works, dating from the mid-1970s to the present. P-Orridge has reinvented and reintroduced h/erself as groundbreaking performance artist, pioneer of industrial music, "wrecker of civilization", essayist, and most recently as pandrogyne. Genesis has performed in a number of music projects including Throbbing Gristle, Psychic TV and Pigface. A central focus for the exhibition is the Pandrogyne project—a complex and highly ambitious series of collaborative artworks by P-Orridge and his wife Lady Jaye Breyer P-Orridge (1969 – 2007).<br />
+						
+				<p><form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+				<input id="fromAddress" type="text" name="from" size="25"/>
+				<input id="toAddress" type="text" value="117 Sandusky Street, Pittsburgh, PA 15212" name="to" size="25"/>
+				<input type="submit" value="Get Directions" name="submit"/>
+				</form>
+			</div>
+		</div>
+		
+<!--#2 Aspen-->
+		<div id="event2">
+			<div class="infoWindowContent">
+				<h2><a href="">02</a> ASPEN ART MUSEUM</h2>
+				<p class="pink"><a href="http://aspenartmuseum.org/">aspenartmuseum.org/</a>
+				<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/2_aspen.jpg" width="360px">	
+				<p><strong>ROB PRUITT: <em>An American Folk Artist</em></strong>
+				<p>May 3–July 14, 2012
+				<p>Reception: Thursday, June 27, 6–8pm
+					<br />
+
+					<p>Since the early 1990s, Rob Pruitt has employed a post-Pop sensibility to playfully satirize the art world and its ambivalent relation to celebrity and popular culture. His AAM exhibition is his first ever solo museum survey, and simultaneously charts a path through the artist’s diverse oeuvre and stays true to the spirit of disruption long central to his practice.
+				
+						<p><strong>THEA DJORDJADZE</strong>
+						<p>May 3–July 14, 2012
+						<p>Reception: Thursday, June 27, 6–8pm
+
+						<p>Originally trained as a painter, Djordjadze is best known for creating sculptural installations that combine found and constructed elements in carefully choreographed settings. Her installations often suggest fragmentary arrangements of furniture and other functional objects, oscillating between such categories as abstraction and decoration, model and reality, process and product. This is Djordjadze’s first major solo exhibition in North America.
+
+						<p><strong>LORNA SIMPSON: <em>Works on Paper</em></strong>
+						<p>2013 Jane and Marc Nathanson Distinguished Artist in Residence
+						<p>July 26–September 22
+						<p> Reception: Thursday, July 25, 6–8pm
+
+						<p><em>Lorna Simpson</em>: Works on Paper highlights a recent body of work that explores the complex relationship between the photographic archive and processes of self-fashioning. This will be the first museum exhibition dedicated to Simpson’s drawings and collages and will be accompanied by a fully illustrated, scholarly catalogue.
+
+						<p><strong>HAYLEY TOMPKINS</strong>
+						<p>July 26 – September 22
+						<p>Reception: Thursday, July 25, 6 – 8 pm
+
+						<p>In her paintings and painted objects, Hayley Tompkins emphasizes the energy found in small things and economical gestures. From sticks and scraps of wood to spoons and mobile phone casings, her choice of support insistently draws attention to the boundary between painting and reality. Her AAM exhibition will be her first solo presentation in a North American institution.
+
+				
+				<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+					<input id="fromAddress" type="text" name="from" size="25"/>
+					<input id="toAddress" type="text" value="590 North Mill Street, Aspen, CO 81611" name="to" size="25"/>
+					<input type="submit" value="Get Directions" name="submit"/>
+					</form>
+				
+			</div>
+		</div>
+<!--#3 Berkshire-->
+		<div id="event3">
+			<div class="infoWindowContent">
+				<h2><a href="">03</a> BERKSHIRE MUSEUM</h2>	
+				<p class="pink"><a href="http://www.berkshiremuseum.org">www.berkshiremuseum.org</a>
+				<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/berkshire.jpg" width="200">
+				<p><strong><em>Objectify: A Look into the Permanent Collection</em></strong>
+				<br />Through March 30, 2015
+				<br />Part of the year-long celebration of the Museum’s 110th anniversary, <em>Objectify</em> is a major new exhibition of some of the most significant and fascinating objects from the Museum’s holdings of more than 40,000 artworks, specimens, and artifacts, ranging from an Egyptian mummy to 20th-century paintings and photographs.  
+				
+				<p><strong><em>PaperWorks: The Art and Science of an Extraordinary Material</em></strong>
+					<br />June 15 – October 26
+					<br /><em>PaperWorks: The Art and Science of an Extraordinary Material</em> is a new exhibition that explores paper as a source of creative inspiration and innovation. PaperWorks features compelling contemporary works of art by more than 30 artists, all fashioned from paper, as well as an array of objects and artifacts that show the uses of paper in industry, science, fashion, and technology.
+				
+					<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+						<input id="fromAddress" type="text" name="from" size="25"/>
+						<input id="toAddress" type="text" value="39 South Street, Pittsfield, MA 01201" name="to" size="25"/>
+						<input type="submit" value="Get Directions" name="submit"/>
+						</form>
+
+				</div>
+			</div>
+			<!--#4 Blaffer-->
+					<div id="event4">
+								<div class="infoWindowContent">
+									<h2><a href="">04</a> BLAFFER ART MUSEUM UNIVERSITY OF HOUSTON</h2>
+									<p class="pink"><a href="http://www.blafferartmuseum.org">www.blafferartmuseum.org</a>
+									<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/Blafferlogo.jpg" width="100px">
+									<p><strong>Window into Houston: Clarissa Tossin: Blind Spot</strong>
+									<br />5/9 – 7/24 
+									<br />Opening reception and remarks by the artist: Wednesday, May 8, 7:30 – 9:30 pm  
+									<br />Often appearing in lower-income areas as an economically savvy strategy to block out the bright Texas sun, foil-covered windows suggested complex issues of location, class, history, and taste to Tossin.. Tossin aims to reveal and unsettle the invisible supporting structures of urban life, capital, and modernity.
+									<br />
+									<br /><strong>andy coolquitt: attainable excellence</strong>
+									<br />5/18 – 8/24
+									<br />Public Opening and Reception: May 17, 2013, 6 – 9 pm
+									<br />For his debut at Blaffer Art Museum, the artist’s first solo museum exhibition, Coolquitt will recombine 60 discrete sculptures and tableaux made between 2006 and 2011 into a site-specific installation which, in its singularity and temporariness, reflects on the condition of the gallery space as a codified place of encounter for people and works of art.<br /> 
+									<br /><strong>Pamela Fraser: The Fourth Dimension was Ha-Ha, in Other Words, That it is Laughter</strong><br />
+									6/1 – 7/27
+									<br />Public Opening and Reception: Friday, May 31, 2013, 6 – 9 pm
+									<br />Pamela Fraser’s first solo museum show introduces a selection of large and small-scale paintings, drawings, and “cut-outs.”. Drawing its title from Robert Smithson’s 1966 essay “Entropy and the New Monuments,” the exhibition seeks similar speculative moments where the deliberate might inspire the spontaneous.<br />
+
+									<br /><strong>Feast: Radical Hospitality in Contemporary Art</strong>
+									Organized by the Smart Museum of Art at the University of Chicago, Feast defines an important new category of contemporary artistic practice – the artist-orchestrated meal. <br />
+									
+								
+
+										<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+												<input id="fromAddress" type="text" name="from" size="25"/>
+												<input id="toAddress" type="text" value="120 Fine Arts Building, Houston, Texas 77004" name="to" size="25"/>
+												<input type="submit" value="Get Directions" name="submit"/>
+											</form>
+								</div>
+					</div>
+		
+<!--#5 CAMSTL-->
+		<div id="event5">
+					<div class="infoWindowContent">
+						<h2><a href="">05</a> CONTEMPORARY ART MUSEUM ST. LOUIS</h2>
+						<p class="pink"><a href="http://www.camstl.org">www.camstl.org</a>
+						<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/CAMSTL.jpg" width="200px">
+						<p><strong><em>Lari Pittman: A Decorated Chronology</em></strong><br/>
+						<p>May 24 – August 11
+
+						<p>Internationally celebrated for the use of exuberant color and painstaking detail to address contentious subjects such as sexuality, desire, and violence, Pittman’s paintings combine a visual breathlessness with a sophisticated formal logic to intertwine the personal and the political.
+							
+				 		<p><strong><em>Mika Taanila: Tomorrow’s New Dawn</em></strong>
+					<p>May 24 – August 11
+					<p>This is the first solo U.S. museum exhibition of renowned Finnish contemporary artist and documentary filmmaker Mika Taanila, who creates works in film, video, photography, sound, and installation that investigate various technological developments and the innovators behind them.
+						<p><strong><em>Kerry James Marshall</em></strong>
+							<p>May 24 – July 7
+								<p>One of America’s most significant living artists, Chicago-based Kerry James Marshall is internationally celebrated for a sophisticated and diverse body of work in a broad range of media informed by African-American life and history, popular culture, and art history. His project will be a new, multidimensional installation specifically created for CAM’s space.
+									
+									<p><strong><em>Josh Faught: Snacks, Supports, and Something to Rally Around</em></strong>
+										<p>July 10 – August 11
+											<p>San Francisco-based St. Louis native Josh Faught creates exuberant large-scale textile works using an array of techniques and materials to demonstrate the ability of textiles to be the source of both personal comfort and political agitation. Faught will present a new body of work at CAM.
+									
+						
+							<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+									<input id="fromAddress" type="text" name="from" size="25"/>
+									<input id="toAddress" type="text" value="3750 Washington Boulevard, St. Louis, MO 63108" name="to" size="25"/>
+									<input type="submit" value="Get Directions" name="submit"/>
+								</form>
+					</div>
+		</div>
+
+<!--#6 COLBY-->
+		<div id="event6">
+				<div class="infoWindowContent">
+					<h2><a href="">06</a> COLBY COLLEGE MUSEUM OF ART</h2>
+					<p class="pink"><a href="https://www.colby.edu/academics_cs/museum/">https://www.colby.edu/academics_cs/museum/</a>
+					<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/colby.jpg" width="100">
+					<p><strong>The Lunder Collection: A Gift of Art to Colby College</strong>
+					<p>7/13/13 – 6/8/14
+
+					<p><em>The Lunder Collection: A Gift of Art to Colby College</em>, installed in the new Alfond-Lunder Family Pavilion and the Lunder Wing, commemorates the formal transfer of an extraordinary gift of more than 500 works of art to the Colby College Museum of Art. On view will be paintings, works on paper and sculptures by American masters as well as important contemporary works. The exhibition is accompanied by a richly illustrated book of collection highlights, with essays by noted curators and art historians.
+					
+					<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+							<input id="fromAddress" type="text" name="from" size="25"/>
+							<input id="toAddress" type="text" value="5600 Mayflower Hill Drive, Waterville, ME 04901" name="to" size="25"/>
+							<input type="submit" value="Get Directions" name="submit"/>
+						</form>
+
+					
+				</div>
+		</div>
+<!--#7 Detroit-->
+		<div id="event7">
+					<div class="infoWindowContent">
+						<h2><a href="">07</a> DETROIT INSTITUTE OF THE ARTS</h2>
+						<p class="pink"><a href="http://www.dia.org/">www.dia.org</a>
+						<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/7_detroit.jpg" width="200">
+						<p><strong><em>Ellsworth Kelly: Prints</em></strong>
+						<p>May 24, 2013 – September 8, 2013
+
+						<p>This is the first retrospective of the artist’s prolific printmaking career since the late 1980s. All the prints come from the collection of Jordan D. Schnitzer of Portland, Oregon. The exhibition coincides with the publication of the updated catalogue raisonné of Kelly’s work.
+						
+						
+						<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+								<input id="fromAddress" type="text" name="from" size="25"/>
+								<input id="toAddress" type="text" value="5200 Woodward Avenue, Detroit, Michigan 48202" name="to" size="25"/>
+								<input type="submit" value="Get Directions" name="submit"/>
+							</form>
+					</div>
+		</div>
+		<!--#8 DIA BEACON-->
+				<div id="event8" >
+					<div class="infoWindowContent">
+					<h2><a href="">08</a> DIA: BEACON</h2>
+					<p class="pink"><a href="http://www.diaart.org/beacon">www.diaart.org/beacon</a>
+					<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/beacon.jpg" width="200">  
+					<p><strong>Dia:Beacon Celebrates 10 Years</strong><br /> 
+					Ten years after Dia:Beacon opened its doors, Dia Art Foundation will inaugurate an anniversary celebration encompassing a yearlong schedule of exhibitions, programs, and events. A new installation of embroidered works and large-scale works on paper by Alighiero e Boetti will be on view at Dia:Beacon 5/18/13 – 2/17/14. Selected from Dia’s collection, the works include <em>Ammazzare il Tempo</em> (1978), <em>Mappa</em> (1972), <em>Opera Postale</em> (1980), <em>Untitled (January–December)</em> (1986), and the groundbreaking <em>Untitled (Victoria Boogie Woogie) (1972)</em>, consisting of 5,040 envelopes the artist mailed to himself in Turin from different cities in Italy. Upcoming highlights include Mitch McEwen on Robert Irwin (6/8); Community Free Day presented in collaboration with Glynwood, and Frances Richard on Louise Lawler (7/13); and Anastasia Aukeman on Bernd and Hilla Becher (8/10).
+					
+
+					<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+							<input id="fromAddress" type="text" name="from" size="25"/>
+							<input id="toAddress" type="text" value="3 Beekman Street, Beacon, NY 12508" name="to" size="25"/>
+							</form>
+					</div>
+		</div>
+							
+<!--#9 Falling Water-->
+		<div id="event9" >
+			<div class="infoWindowContent">
+			<h2><a href="">09</a> Falling Water</h2>
+			<p class="pink"><a href="http://www.fallingwater.org">www.fallingwater.org</a>
+			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/8_fallingwater.jpg" width="200">
+			<p>House tours are available daily except Wednesday from 10 am until 4 pm now through November 30th, Friday, Saturday and Sunday in December and the week between Christmas and New Year’s Day. Two hour In-depth tour, one hour regular tour, Sunset Tour, Brunch Tour and lectures are available.  Advance ticket purchase or reservations are essential to guarantee admission. Design in Harmony with Nature: Education at Fallingwater exhibition in the Visitor Center Gallery from mid-June through September.  
+			
+			<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+					<input id="fromAddress" type="text" name="from" size="25"/>
+					<input id="toAddress" type="text" value="1491 Mill Run Road, Mill Run, PA  15464" name="to" size="25"/>
+					<input type="submit" value="Get Directions" name="submit"/>
+				</form>
+			</div>
+		</div>
+
+<!--#10 Meijer-->
+		<div id="event10">
+		<div class="infoWindowContent">
+			<h2><a href="">10</a> Frederik Meijer Gardens & Sculpture Park</h2>
+			<p class="pink"><a href="http://www.meijergardens.org/">www.meijergardens.org/</a>
+			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/9_frederik.jpg" width="200">
+			<p><strong>Richard Serra Acquisition</strong>
+			<p>Frederik Meijer Gardens & Sculpture Park is honored to announce the acquisition of a major piece <em>Equal Intervals, Equal Elevations</em> by the eminent American sculptor, Richard Serra. 
+
+			<p><strong>Bernar Venet at Meijer Gardens</strong> 
+			<p>Through October 2013
+
+			<p>Five colossal works are on display on the front lawn by the acclaimed French Sculptor.
+
+			<p><strong>Looking East, Facing West: the World of Zhang Huan</strong>
+			<p>Through August 25, 2013
+
+			<p>Themes of physical endurance and spiritual tranquility, Chinese history and heritage, and an interest in and reverence for Buddhism inform Huan’s repertoire. While works of sculpture are central to this presentation several of the artist’s paintings and photographs will also be featured. This exhibition is organized by Frederik Meijer Gardens & Sculpture Park in cooperation with the artist and Pace Gallery, New York, Beijing and London.
+		
+			
+			
+			<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+					<input id="fromAddress" type="text" name="from" size="25"/>
+					<input id="toAddress" type="text" value="1000 East Beltline Ave. NE, Grand Rapids, MI 49525" name="to" size="25"/>
+					<input type="submit" value="Get Directions" name="submit"/>
+				</form>
+		</div>
+			
+		</div>
+<!--#11 Guild-->	
+				<div id="event11">		
+					<div class="infoWindowContent">
+					<h2><a href="">11</a> Guild Hall Museum</h2>
+					<p class="pink"><a href="http://www.guildhall.org">www.guildhall.org</a>
+					<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/guildhall.jpg" width="150">
+					<p><strong>John Alexander</strong>
+					<br />6/15 – 7/28
+					<br />John Alexander is a visionary artist whose paintings, watercolors, drawings and prints most often contain representational imagery that have Surreal elements incorporated into their multi-layered narratives. For the Guild Hall exhibition, Alexander is creating a new body of work that incorporates natural landscapes.<br />  
+					<br />
+					<strong>Artists & Writers: They Played in the Game</strong><br />
+					6/15 – 7/28
+					<br />East Hampton’s beloved Artists & Writers Softball Game will take to the field for its 65th annual game on August 17. In celebration, the Museum at Guild Hall opens an exhibition featuring works from our permanent collection of artists who have played in the game, along with works that are on loan. The show is co-curated by Elena Prohaska Glinn and Christina Mossaides Strassfield, Museum Director/Chief Curator of Guild Hall.<br />
+
+					<br /><strong>Joel Perlman</strong>
+					<br />6/15 – 10/14
+					<br />Joel Perlman’s sculptures will be on display in the Frieda and Roy Furman Sculpture Garden, open daily, and the Wasserstein Family Gallery, open during museum hours.<br />
+
+					<br /><strong>Chuck Close</strong> 
+					<br />8/10 – 10/14
+					<br />Recent paintings, prints and tapestries by Chuck Close. He has been a part-time resident of the East End for more than 40 years.<br />
+					
+					<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+							<input id="fromAddress" type="text" name="from" size="25"/>
+							<input id="toAddress" type="text" value="158 Main Street, East Hampton, NY 11937" name="to" size="25"/>
+							<input type="submit" value="Get Directions" name="submit"/>
+						</form>
+				</div>
+
+				</div>		
+<!--#12 ICP-->	
+		<div id="event12">		
+			<div class="infoWindowContent">
+			<h2><a href="">12</a> International Center of Photography</h2>
+			<p class="pink"><a href="http://www.icp.org">www.icp.org</a>
+			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/ICP.jpg" width="300">
+			
+			<p><strong>A Different Kind of Order: The ICP Triennial</strong><br />
+				through 9/22<br />
+			<br />Every three years, ICP's curators round up some of the most interesting contemporary photography and video works from around the world. The 2013 Triennial, <em>A Different Kind of Order</em>, focuses on artworks created in our current moment of widespread economic, social, and political instability. The exhibition will include 28 international artists who employ photography, film, video, and interactive media. Many of their works reflect the growing importance of new paradigms associated with digital image making and network culture. <em>A Different Kind of Order</em> is organized by Kristen Lubben, Christopher Phillips, Carol Squiers, and Joanna Lehan.
+			
+			<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+						<input id="fromAddress" type="text" name="from" size="25"/>
+						<input id="toAddress" type="text" value="1133 Avenue of the Americas at 43rd Street, New York, NY 10036" name="to" size="25"/>
+						<input type="submit" value="Get Directions" name="submit"/>
+					</form>
+			
+			</div>
+		</div>
+		<!--#13 Mattress Factory-->	
+				<div id="event13">		
+					<div class="infoWindowContent">
+					<h2><a href="">13</a> MATTRESS FACTORY</h2>
+					<p class="pink"><a href="http://www.mattress.org">mattress.org</a>
+					<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/mattressfactory.jpg" width="150">
+					<p><strong>Chiharu Shiota</strong>
+					<br />Opening 7/13
+					<br />Reception: 7/12
+					<br /><em>Sampsonia Way</em> is a site-specific installation by Chiharu Shiota which focuses on the body with relation to place and space. Incorporating her experience working with performance artist Marina Abramovic in Germany, and the influence of traditional Japanese Butoh dance, Shiota creates environments that blur the distinction between object and space, as well as self and environment.<br /> 
+
+					<br /><strong>Detroit: Artists in Residence</strong>
+					<br />Opening 9/13
+					<br />Reception: 9/12
+					<br />The Mattress Factory celebrates its 35th anniversary with an exhibition of work by Detroit-based artists Design 99, Jessica Frelinghuysen, Scott Hocking, Nicola Kuperus and Adam Lee Miller, Russ Orlando and Frank Pahl, who are all reacting to the swift socioeconomic changes in their city, creating work freely in an environment burgeoning with opportunity.<br /> 
+
+				<br />	Ongoing Permanent Installations include works by world-renowned artists Yayoi Kusama, Greer Lankton, Winifred Lutz and James Turrell.<br />
+				
+				<br /><strong>Janine Antoni</strong>
+				<br />Opening 9/13
+				<br />Reception: 9/12
+				<br />Janine Antoni's work often explores traditionally feminine roles and celebrates the physical act of creating art. Her work, which is always labor-intensive and often involves her body, combines whatever media best suit her creative goals—sculpture, installation, performance, photography and video—to explore and inspire reflection on enduring and contemporary subjects. For her project at the Mattress Factory—curated by Margery King—Antoni will install all of the special exhibition galleries at the museum's annex at 1414 Monterey Street. A native of Freeport, Bahamas, Janine Antoni now lives and works in New York City.  <br />
+					
+					<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+								<input id="fromAddress" type="text" name="from" size="25"/>
+								<input id="toAddress" type="text" value="500 Sampsonia Way, Pittsburgh, PA 15212" name="to" size="25"/>
+								<input type="submit" value="Get Directions" name="submit"/>
+							</form>
+
+					</div>
+				</div>
+<!--#14 Menil-->		
+		<div id="event14" >		
+			<div class="infoWindowContent">	
+			<h2><a href="">14</a> THE MENIL COLLECTION</h2>
+			<p class="pink"><a href="http://www.menil.org">www.menil.org</a>
+			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/menil.jpg"width="250">
+				<p><strong>Forrest Bess: Seeing Things Invisible</strong>
+				<br />April 19 – August 18, 2013
+				
+				<p><strong>Byzantine Things in the World</strong>
+				<br />May 3 – August 18, 2013
+				
+				<p><strong>Late Surrealism</strong>
+				<br />May 24 – August 25, 2013
+				
+				
+			
+			<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+							<input id="fromAddress" type="text" name="from" size="25"/>
+							<input id="toAddress" type="text" value="1533 Sul Ross Street Houston, Texas 77006" name="to" size="25"/>
+							<input type="submit" value="Get Directions" name="submit"/>
+						</form>
+				</div>
+		</div>
+		
+		<!--#15 Morris-->	
+				<div id="event15">		
+					<div class="infoWindowContent">
+					<h2><a href="">15</a> MORRIS MUSEUM OF ART</h2>
+					<p class="pink"><a href="http://www.themorris.org">www.themorris.org</a>
+					<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/morris.jpg" width="200">
+					<p><strong>Tradition/Innovation: American Masterpieces of Southern Craft and Traditional Art</strong><br />
+					6/8 – 9/1<br />
+				<em>Tradition/Innovation: American Masterpieces of Southern Craft and Traditional Art</em> is a celebration of master craftspeople and artists in the South. This exhibition introduces museum visitors to a surprising range of contemporary artwork—everything from a Mardi Gras Indian costume and glass to baskets, quilts, ceramics, books, and silver work. <br />
+					<br /> 
+
+					<strong>The Gladness of Nature: Paintings by Honor Marks</strong><br />
+					7/27 – 10/6<br />
+					Drawing her inspiration from writers Annie Dillard, Edward Abbey, and Madeleine L'Engle and a host of botanical and natural history painters, Honor "transforms meticulous field study into bold, yet sensitive paintings of some of our most beautiful and rare botanical specimens," according to Burton Moore of the Audubon Gallery in Charleston.<br />
+
+					<br /><strong>Richard Jolley and Tommie Rush: The Art of Glass</strong><br />
+					8/9 – 11/10<br />
+					<em>The Art of Glass</em> features sculpture by two of the leading contemporary artists working in this demanding medium, husband and wife Richard Jolley and Tommie Rush. In 2011, the Mobile Museum of Art in Mobile, Alabama, organized a joint retrospective exhibition of the work of both artists. They live and work in Knoxville, Tennessee.<br />
+					
+					<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+								<input id="fromAddress" type="text" name="from" size="25"/>
+								<input id="toAddress" type="text" value="1 Tenth Street, Augusta, GA 30901" name="to" size="25"/>
+								<input type="submit" value="Get Directions" name="submit"/>
+							</form>
+
+					</div>
+				</div>
+				
+				<!--#16 MOCAD-->	
+						<div id="event16">		
+							<div class="infoWindowContent">
+							<h2><a href="">16</a> MUSEUM OF CONTEMPORARY ART DETROIT</h2>
+							<p class="pink"><a href="http://www.mocadetroit.org">www.mocadetroit.org</a>
+							<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/MoCAD.jpg" width="150">
+							<p><strong>Mike Kelley: MOBILE HOMESTEAD</strong><br />
+							through 7/28<br />
+							A new public sculpture for the city of Detroit and an accompanying exhibition of videos and documentation.<br />
+
+							<br /><em>Mobile Homestead</em> is a permanent art work by the late Mike Kelley located on the grounds of the Museum of Contemporary Art Detroit. It's both a public sculpture and a private, personal architecture – based on the artist's childhood home on Palmer Road in Westland, a neighborhood which primarily housed workers for the Big Three auto makers: Ford, Chrysler and General Motors.<br />
+							
+							<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+										<input id="fromAddress" type="text" name="from" size="25"/>
+										<input id="toAddress" type="text" value="4454 Woodward Ave, Detroit, MI 48201" name="to" size="25"/>
+										<input type="submit" value="Get Directions" name="submit"/>
+									</form>
+
+							</div>
+						</div>
+						
+<!--#17 MOCAT-->	
+	<div id="event17">		
+									<div class="infoWindowContent">
+									<h2><a href="">17</a> MUSEUM OF CONTEMPORARY ART TUCSON</h2>
+									<p class="pink"><a href="http://www.moca-tucson.org">www.moca-tucson.org</a>
+									<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/MOCATucson.jpg" width="300">
+						<p>			
+							5/25 – 9/23<br /> 
+							Great Hall: <strong>Chico MacMurtrie: Chrysalis</strong><br />
+									East Wing:  <strong>Ken Shorr: The Tucson Years</strong><br />
+						
+									<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+												<input id="fromAddress" type="text" name="from" size="25"/>
+												<input id="toAddress" type="text" value="265 South Church Avenue, Tucson, AZ 85701" name="to" size="25"/>
+												<input type="submit" value="Get Directions" name="submit"/>
+											</form>
+
+									</div>
+								</div>
+<!--#18 Parrish-->			
+		<div id="event18">		
+			<div class="infoWindowContent">
+			<h2><a href="">18</a> PARRISH ART MUSEUM</h2>
+			<p class="pink"><a href="http://www.parrishart.org/">parrishart.org/</a>
+			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/Parrish.jpg" width="200">
+				
+	
+				<p><strong>Platform: Josephine Meckseper</strong>
+					<br /> July 4–October 14, 2013
+					<br />Five sculptural works installed in the outdoor gallery, lobby, and permanent collection galleries.
+				<p><strong>Angels, Demons, and Savages: Pollock, Ossorio, Dubuffet</strong>
+					<br /> July 21–October 27, 2013
+					<br />This exhibition explores the cross-cultural artistic dialogue among American painter Jackson Pollock, Philippines-born artist and art patron Alfonso Ossorio, and French painter and sculptor Jean Dubuffet.
+						
+				<p><strong>Michelle Stuart: Drawn from Nature</strong>
+							<br /> July 21–October 27, 2013
+							<br />An exhibition of sixty works from the 1960s to the present by the internationally acclaimed artist.
+							<p><strong>Parrish Road Show: Sydney Albertini—And Also, I Have No Idea</strong>
+							<br />August 11–September 2
+							<br />A quasi-theater set of Albertini’s soft sculptures and costumes at a site in East Hampton.
+
+							<p><strong>Parrish Road Show: Almond Zigmund—Interruptions Repeated</strong>
+							<br />August 25–September 10
+							<br />Objects from Zigmund’s studio, compiled into sculptural forms and relocated to a nineteenth-century building in Sag Harbor.
+						
+				<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+								<input id="fromAddress" type="text" name="from" size="25"/>
+								<input id="toAddress" type="text" value="279 Montauk Highway, Water Mill, NY 11976" name="to" size="25"/>
+								<input type="submit" value="Get Directions" name="submit"/>
+							</form>
+			</div>
+		</div>
+<!--#19 Pulitzer-->		
+		<div id="event19">		
+			<div class="infoWindowContent">		
+				<h2><a href="">19</a> The Pulitzer Foundation for the Arts</h2>
+				<p class="pink"><a href="http://www.pulitzerarts.org">http://www.pulitzerarts.org</a>
+				<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/13_pulitzerfoundation.jpg" width="350">
+
+				<p><strong>Donald Judd: The Multicolored Works</strong><br/>  
+				<p>May 10, 2013 – January 4, 2014
+				<p> The Pulitzer Foundation for the Arts presents the first exhibition devoted exclusively to Donald Judd’s multicolored works. Curated by Marianne Stockebrand, the exhibition features an extraordinary group of more than 50 works created by Judd between 1984 and 1992. Included are wall-mounted works and a large floor piece from private and public collections across the United States and Europe, and rarely seen collages and drawings from the Judd Foundation's archive. <br/>
+					
+				<p>Free and open to the public. Wednesdays, 12– 5 pm, Saturdays, 10 am – 5 pm
+				<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+								<input id="fromAddress" type="text" name="from" size="25"/>
+								<input id="toAddress" type="text" value="3716 Washington Boulevard, St. Louis, MO 63108" name="to" size="25"/>
+								<input type="submit" value="Get Directions" name="submit"/>
+							</form>
+			
+				</div>
+		</div>
+
+
+<!--#20 Smith -->		
+		<div id="event20">		
+			<div class="infoWindowContent">	
+			<h2><a href="">20</a> SMITH COLLEGE MUSEUM OF ART</h2>
+			<p class="pink"><a href="http://www.smith.edu/artmuseum">smith.edu/artmuseum</a>
+			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/18_smith.jpg" width="200px">
+			<p>	<strong>Summer of Love: Psychedelic Posters from SCMA</strong>
+			<p>June 14 – September 15
+			<p>Featuring 70 original works by some of the major California poster artists of the 1960s, this exhibition explores the American counterculture through a popular visual medium that vividly evokes a particular time and place. In their attempts to target disaffected youth in the Bay Area, the artists who created the original posters on view graphically captured life in San Francisco during the late 1960s through the lens of the era’s rock concerts, drug use, and cultural gatherings.  Psychedelic posters served as a kind of visual social media of their time, attracting and linking their main audience: young people in San Francisco. At the same time—with their provocative imagery and messages, inventive typography, and distinctive palette—the posters gained attention far beyond San Francisco where they were first posted or distributed.<br/>
+
+			<p><strong>Framework IX: Restoring the Boundaries</strong>
+			<p>May 10– November 3, 2013
+
+			<p><em>Framework IX</em> showcases this year’s results of the Museum’s frame conservation apprenticeship program.  In this program, now in its ninth year, Smith College and other Five-College students are trained by Chief Preparator William Myers and Associate Director David Dempsey in the techniques of frame conservation.  Featured in this installation is an historically accurate frame created for Childe Hassam’s <em>Headlands at Appledore</em> (1907), a bequest of Smith alumna Priscilla Mason (class of 1935). Two frames were also carefully conserved, an English frame surrounding Robert Smirke’s <em>Scene from Cibber’s “The Provoked Husband”</em> (late 18th century), and the American frame for Albert Bierstadt’s <em>Echo Lake, Franconia Mountains, New Hampshire</em> (1861).
+				
+		
+			
+					<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+											<input id="fromAddress" type="text" name="from" size="25"/>
+											<input id="toAddress" type="text" value="20 Elm Street, Northampton, MA 01060" name="to" size="25"/>
+											<input type="submit" value="Get Directions" name="submit"/>
+										</form>
+			
+			</div>
+		</div>
+		
+
+<!--#21 SECCA -->
+				<div id="event21">		
+					<div class="infoWindowContent">	
+					<h2><a href="">21</a> SOUTH EASTERN CENTER FOR CONTEMPORARY ART (SECCA)</h2>
+					<p class="pink"><a href="http://www.secca.org">www.secca.org</a>
+					<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/SECCA.jpg" width="100px">
+					<p><strong>Tomory Dodge & Denyse Thomasos: Directions to a Dirty Place</strong><br />
+					3/22 – 9/1<br />
+					Organized by SECCA; Curated by Steven Matijcio<br />
+					Paint can be both the image and the “stuff” of structure, moving between representation of place, and place itself. The work of Denver-born, Los Angeles-based artist Tomory Dodge and Trinidad-born, New York-based artist Denyse Thomasos slide between these poles in highly evocative ways.<br /><br /> 
+
+					<strong>Hedieh Javanshir Ilchi: A leaf from my rose garden</strong><br />
+					6/21 – 9/1<br />
+					Organized by SECCA; Curated by Steven Matijcio<br />
+					Meeting in the garden paradises of Islamic myth, Ilchi marries contrasting traditions of ornamental Persian painting with the defiant splatters and pours of Western abstraction.<br /><br />
+
+					<strong>reGeneration2: Tomorrow’s Photographers Today</strong><br />
+					6/21 – 9/15<br />
+					This exhibition was produced by the Musée de l’Elysée, Lausanne, in collaboration with the Aperture Foundation, New York<br />
+					<em>reGeneration2</em> showcases young practitioners focusing on major themes as diverse as the urban environment, identity, globalization, memory, as well as their hybrid techniques, which allow them to obscure as never before the distinction between reality and fiction.<br />
+					
+					
+					
+						<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+												<input id="fromAddress" type="text" name="from" size="25"/>
+												<input id="toAddress" type="text" value="750 Marguerite Drive, Winston-Salem, North Carolina  27106-5861" name="to" size="25"/>
+												<input type="submit" value="Get Directions" name="submit"/>
+											</form>
+		</div>	
+	</div>
+<!--#22 WALKER -->		
+					<div id="event22">		
+						<div class="infoWindowContent">	
+						<h2><a href="">22</a> WALKER ART CENTER</h2>
+						<p class="pink"><a href="http://www.walkerart.org">www.walkerart.org</a>
+						<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/19_walker.jpg" width="250px">
+						<p><strong>Artist-Designed Mini Golf</strong>
+						<br />May 23 – September 8, 2013
+						<br />The Walker celebrates the 25th anniversary of the Minneapolis Sculpture Garden with a fresh round of artist-designed mini golf.
+
+						<p><strong>Painter Painter</strong>
+							<br /> Through October 27, 2013
+							<br />The Walker’s first group painting show in over a decade features new work by 15 artists from the US and Europe in a focused survey of emergent developments in abstract painting and studio practice.
+
+						<p><strong>Abraham Cruzvillegas: The Autoconstrucción Suites</strong>
+							<br />Through September 22
+							<br />Over 30 sculptures and installations from one of the most important artists to come out of Mexico’s vibrant art scene.
+						<p><strong>The Museum of Non Participation: The New Deal</strong>
+							<br />Through July 14
+							<br />Karen Mirza and Brad Butler transform a gallery into a multilayered installation and evolving social space that interrogates the shifting allegiances, contracts, and “new deals” between nation states and their citizens in the US debut of their ongoing project.
+
+								<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+														<input id="fromAddress" type="text" name="from" size="25"/>
+														<input id="toAddress" type="text" value="1750 Hennepin Avenue, Minneapolis, MN 55403" name="to" size="25"/>
+														<input type="submit" value="Get Directions" name="submit"/>
+													</form>
+						</div>
+					</div>
+	<!--#23 Weatherspoon -->
+					<div id="event23">		
+						<div class="infoWindowContent">	
+						<h2><a href="">23</a> Weatherspoon Art Museum</h2>
+						<p class="pink"><a href="http://weatherspoon.uncg.edu">http://weatherspoon.uncg.edu</a>
+						<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/weatherspoon.jpg" width="100px">
+						
+						<p><strong>The Penetrating Gaze</strong><br />
+						Through 6/16<br />
+						<br />
+						<strong>Head to Head</strong><br />
+						Through 6/23<br />
+						<br />
+						<strong>the kids are all right:  an exhibition about family and photography</strong><br />
+						6/1 – 8/18<br />
+						<br />
+						<strong>Arlene Shechet: That Time</strong><br />
+						6/15 – 9/15<br />
+						<br />
+						<strong>Art History: Redux</strong><br />
+						6/29 – 10/20<br />
+						<br />
+						<strong>Resolutely Matisse</strong><br />
+						7/6 – 9/29<br />
+						<br />
+						<strong>Nira Pereg: Abraham Abraham / Sarah Sarah</strong><br />
+						6/15 – 9/15<br />
+
+
+							<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+													<input id="fromAddress" type="text" name="from" size="25"/>
+													<input id="toAddress" type="text" value="500 Tate Street, Greensboro, NC  27412" name="to" size="25"/>
+													<input type="submit" value="Get Directions" name="submit"/>
+												</form>
+			</div>	
+		</div>
+		<!--#24 Yerba Buena -->
+						<div id="event24">		
+							<div class="infoWindowContent">	
+							<h2><a href="">24</a> Yerba Buena Center for the Arts</h2>
+							<p class="pink"><a href="http://www.ybca.org">http://www.ybca.org</a>
+							<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/yerbabuena.jpg" width="100px">
+
+
+								<p><strong>Migrating Identities</strong><br />
+								6/28 – 9/29<br />
+								In this exhibition, eight artists actively negotiate their relationships with two or more different cultures and the influence of each on their individual lives. The work of these artists, all of whom are in their late 30s and early 40s, forms a sampling of a generation’s response to the role of cultural diversity in the U.S.<br /><br /> 
+
+								<strong>Kota Ezawa: Boardwalk</strong><br />
+								6/28/13 – November 2015<br />
+								Kota Ezawa rebuilds a side view of the Seaside Heights boardwalk, which was devastated during Hurricane Sandy, in YBCA’s Sculpture Court. Restoring the boardwalk by proxy, the project, in the artist’s words, acts as a type of "visual disaster relief."<br /><br />
+
+								<strong>Thiago Rocha Pitta: The Domain of Silence</strong><br />
+								7/12 – 9/8<br />
+								By installing two empty tents facing each other in the gallery, with all sides entirely closed off--barring the entrances and exits--the sculpture negates its utility as a shelter. Installed alone in an empty gallery, the sculptures seem suspended, without any purpose, silent.<br />
+								
+								<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+														<input id="fromAddress" type="text" name="from" size="25"/>
+														<input id="toAddress" type="text" value="701 Mission Street, San Francisco, CA 94103-3138" name="to" size="25"/>
+														<input type="submit" value="Get Directions" name="submit"/>
+													</form>
+				</div>	
+			</div>	
+			<!--#25 Gibbes -->
+							<div id="event25">		
+								<div class="infoWindowContent">	
+								<h2><a href="">25</a> Gibbes Museum of Art</h2>
+								<p class="pink"><a href="http://www.gibbesmuseum.org">www.gibbesmuseum.org</a>
+								<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/gibbes.gif" width="200px">
+
+
+									<p><strong>The Spoleto Watercolors of Stephen Mueller and Carl Palazzolo</strong><br />
+									on view through September 15, 2013<br />
+									
+
+									<p>	<form onsubmit="setDirections(this.from.value, this.to.value); return false" action="#">
+															<input id="fromAddress" type="text" name="from" size="25"/>
+															<input id="toAddress" type="text" value="135 Meeting Street, Charleston, SC 29401" name="to" size="25"/>
+															<input type="submit" value="Get Directions" name="submit"/>
+														</form>
+					</div>	
+				</div>			
+	<div class="controls">
+			<div id="guidelink">
+				<div class="img-shadow">
+					<div class="mapContainer">
+						<div class="mapHeader">
+							<h1><span style="text-align: center;color:#000000;">BOMB SUMMER ROAD TRIP MAP</span></h1>
+							<h1>ROAD TRIP LOCATIONS</h1>
+						</div>
+							<div class="mapBody">
+									<div class="sideContent" style="margin-bottom:5px">
+										<h2> <span style="text-align: justified; margin-bottom:5px;">CLICK THE <span style="color:#FF00B1;">PINK NUMBERS</span> OR THE MARKERS FOR MORE INFORMATION AND DIRECTIONS</h2></span>
+
+
+									</div>
+
+								<!--#1 Warhol-->		
+											<div class="sideContent">
+												<h2><a href="javascript:showwarhol(1)">01</a> THE ANDY WARHOL MUSEUM</h2>
+												<p class="pink"><a href="http://www.warhol.org">www.warhol.org</a>	
+													<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/andywarhol.jpg" width="250px">
+													<p><strong>Genesis Breyer P-Orridge: S/HE IS HER/E</strong>
+													<br />Through September 15, 2013
+													
+
+							</div>
+				<!--#2 Aspen-->
+							<div class="sideContent">
+								<h2><a href="javascript:showEvent(2)">02</a> ASPEN ART MUSEUM</h2>
+								<p class="pink"><a href="http://www.aspenartmuseum.org/">aspenartmuseum.org</a>
+								<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/2_aspen.jpg" width="200px">
+								<p><strong>ROB PRUITT: <em>An American Folk Artist</em></strong>
+								<br />Through July 14
+								<br/>Reception: Thursday, June 27, 6 – 8 pm
+								
+								<p><strong>THEA DJORDJADZE</strong>
+									<br />Through July 14
+									<br />Reception: Thursday, June 27 6 – 8 pm
+									
+								<p><strong>LORNA SIMPSON: <em>Works on Paper</em></strong>
+								<br />2013 Jane and Marc Nathanson Distinguished Artist in Residence
+								<br />July 26 – September 22
+								<br />Reception: Thursday, July 25, 6 – 8 pm
+									
+									<p> <strong>HAYLEY TOMPKINS</strong>
+									<br />July 26 – September 22
+									<br />Reception: Thursday, July 26, 6 – 8 pm
+									
+							</div>
+				<!--#3 Berkshire-->
+							<div class="sideContent">
+								<h2><a href="javascript:showEvent(3)">03</a> BERKSHIRE MUSEUM</h2>	
+								<p class="pink"><a href="http://www.berkshiremuseum.org">www.berkshiremuseum.org</a>
+								<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/berkshire.jpg" width="200">
+								<p><strong><em>Objectify: A Look into the Permanent Collection</em></strong>
+								<br />Through March 30, 2015
+								 
+								<p><strong><em>PaperWorks: The Art and Science of an Extraordinary Material</em></strong>
+									<br />June 15 – October 26
+								
+								
+							</div>
+				<!--#4 Blaffer-->
+							<div class="sideContent">
+								<h2><a href="javascript:showEvent(4)">04</a> BLAFFER ART MUSEUM UNIVERSITY OF HOUSTON</h2>
+									<p class="pink"><a href="http://www.blafferartmuseum.org">www.blafferartmuseum.org</a>
+							<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/Blafferlogo.jpg" width="125px">
+								<p><strong>Window into Houston: Clarissa Tossin: Blind Spot</strong>
+								<br />5/9 – 7/24 
+								<br />
+								<br /><strong>andy coolquitt: attainable excellence</strong>
+								<br />5/18 – 8/24
+								<br />
+								<br /><strong>Pamela Fraser: The Fourth Dimension was Ha-Ha, in Other Words, That it is Laughter</strong><br />
+								6/1 – 7/27<br />
+								<br />
+								<strong>Feast: Radical Hospitality in Contemporary Art</strong>
+								
+								
+			
+									
+							</div>
+				<!--#5 CAMSTL-->
+										<div class="sideContent">
+											<h2><a href="javascript:showcamstl(5)">05</a> CONTEMPORARY ART MUSEUM ST. LOUIS</h2>
+												<p class="pink"><a href="http://www.camstl.org">www.camstl.org</a>
+										<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/CAMSTL.jpg" width="200px">
+											<p><strong>Lari Pittman: A Decorated Chronology</strong>
+											<br />5/24 – 8/11<br />
+											<br /><strong>Mika Taanila: Tomorrow’s New Dawn</strong>
+										<br />5/24 – 8/11<br />
+										<br /><strong>Kerry James Marshall</strong>
+											<br />5/24 – 7/7<br />
+										<br /><strong>Josh Faught: Snacks, Supports, and Something to Rally Around</strong><br />
+										7/10 – 8/11<br />
+										
+
+										</div>
+				
+				<!--#6 COLBY-->
+							<div class="sideContent">
+								<h2><a href="javascript:showEvent(6)">06</a> COLBY COLLEGE MUSEUM OF ART</h2>
+								<p class="pink"><a href="http://www.colby.edu/museum">www.colby.edu/museum</a>
+								<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/colby.jpg" width="100">
+								<p><strong>The Lunder Collection: A Gift of Art to Colby College</strong>
+								<br />7/13/13 – 6/8/14
+
+						
+							</div>
+				<!--#7 Detroit-->
+							<div class="sideContent">
+								<h2><a href="javascript:showdia(7)">07</a> DETROIT INSTITUTE OF THE ARTS</h2>
+									<p class="pink"><a href="http://www.dia.org/">www.dia.org</a>
+									<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/7_detroit.jpg" width="200">
+									<p><strong>Ellsworth Kelly: Prints</strong>
+									<br />Through September 8, 2013
+
+							
+							</div>
+								<!--#8 DIA BEACON-->	
+											<div class="sideContent">
+												<h2><a href="javascript:showEvent(8)">08</a> DIA:BEACON</h2>
+												<p class="pink"><a href="http://www.diaart.org/beacon">http://www.diaart.org/beacon</a>
+												<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/beacon.jpg" width="200">
+										<p><strong>DIA:BEACON Celebrates 10 Years</strong>
+
+											</div>
+				<!--#9 Falling Water-->	
+							<div class="sideContent">
+								<h2><a href="javascript:showEvent(9)">09</a> FALLING WATER</h2>
+								<p class="pink"><a href="http://www.fallingwater.org">www.fallingwater.org</a>
+								<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/8_fallingwater.jpg" width="200">
+									
+							</div>
+				<!--#10 Meijer-->
+							<div class="sideContent">
+								<h2><a href="javascript:showEvent(10)">10</a> Frederik Meijer Gardens & Sculpture Park</h2>
+								<p class="pink"><a href="http://www.meijergardens.org/">www.meijergardens.org/</a>
+								<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/9_frederik.jpg" width="200">
+								<p><strong>Richard Serra Acquisition</strong>
+								
+								<p><strong>Bernar Venet at Meijer Gardens</strong> 
+								<br />Through October 2013
+								
+								<p><strong>Looking East, Facing West: the World of Zhang Huan</strong>
+								<br />Through August 25, 2013
+	
+							</div>
+							
+							<!--#25 Gibbes-->			
+							<div class="sidecontent">	
+							<h2><a href="javascript:showEvent(25)">25</a> GIBBES MUSEUM OF ART</h2>
+				<p class="pink"><a href="http://www.gibbesmuseum.org">www.gibbesmuseum.org</a>
+	<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/gibbes.gif" width="200px">
+<p><strong>The Spoleto Watercolors of Stephen Mueller and Carl Palazzolo </strong>
+			<br />on view through September 15, 2013
+
+
+
+																		</div>
+							<!--#11 Guild-->
+										<div class="sideContent">
+											<h2><a href="javascript:showEvent(11)">11</a> Guild Hall Museum</h2>
+											<p class="pink"><a href="http://www.guildhall.org">www.guildhall.org</a>
+											<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/guildhall.jpg" width="100">
+											<p><strong>John Alexander</strong><br />
+												6/15 – 7/28<br />
+
+											<p><strong>Artists & Writers: They Played in the Game</strong> 
+											<br />6/15 – 7/28<br />
+
+											<p><strong>Joel Perlman</strong>
+											<br />6/15 – 10/14<br />
+											
+											<p><strong>Chuck Close</strong>
+											<br />8/10 – 10/14
+
+										</div>
+				<!--#12 ICP-->
+							<div class="sideContent">
+								<h2><a href="javascript:showicp(12)">12</a> International Center of Photography</h2>
+								<p class="pink"><a href="http://www.icp.org">www.icp.org</a>
+									
+								<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/ICP.jpg" width="300">
+									<p><strong>	A Different Kind of Order: The ICP Triennial</strong>
+										<br />through September 22, 2013
+							</div>
+					<!--#13 Mattress Factory-->
+										<div class="sideContent">
+											<h2><a href="javascript:showEvent(13)">13</a> Mattress Factory</h2>
+											<p class="pink"><a href="http://mattress.org">mattress.org</a>
+
+											<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/mattressfactory.jpg" width="150">
+												<p><strong>Chiharu Shiota</strong>
+													<br />Opening 7/13
+													<br />Reception: 7/12
+												<p><strong>Detroit: Artists in Residence</strong>
+													<br />Opening 9/13
+													<br />Reception: 9/12
+													<p><strong>Ongoing Permanent Installations</strong> include works by world-renowned artists Yayoi Kusama, Greer Lankton, Winifred Lutz and James Turrell.
+														<p><strong>Janine Antoni</strong>
+														<br />Opening 9/13
+														<br />Reception: 9/12
+														
+										</div>	
+						
+				<!--#14 Menil-->			
+							<div class="sidecontent">
+								<h2><a href="javascript:showmenil(14)">14</a> THE MENIL COLLECTION</h2>
+								<p class="pink"><a href="http://www.menil.org">www.menil.org</a></p>
+								<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/menil.jpg"width="300">
+									<p><strong>Forrest Bess: Seeing Things Invisible</strong>
+									<br />April 19 – August 18, 2013
+
+									<p><strong>Byzantine Things in the World</strong>
+									<br />May 3 – August 18, 2013
+
+									<p><strong>Late Surrealism</strong>
+									<br />May 24 – August 25, 2013
+</div>
+
+<!--#15 Morris-->			
+			<div class="sidecontent">
+				<h2><a href="javascript:showEvent(15)">15</a> MORRIS MUSEUM OF ART</h2>
+				<p class="pink"><a href="http://www.themorris.org">www.themorris.org</a></p>
+				<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/morris.jpg"width="100">
+					<p><strong>Tradition/Innovation: American Masterpieces of Southern Craft and Traditional Art</strong>
+					<br />6/8 – 9/1
+
+					<p><strong>The Gladness of Nature: Paintings by Honor Marks</strong>
+					<br />7/27 – 10/6
+
+					<p><strong>Richard Jolley and Tommie Rush: The Art of Glass</strong>
+					<br />8/9 – 11/10
+</div>
+	<!--#16 MOCAD-->			
+				<div class="sidecontent">
+					<h2><a href="javascript:showEvent(16)">16</a> MUSEUM OF CONTEMPORARY ART DETROIT</h2>
+					<p class="pink"><a href="http://www.mocadetroit.org">www.mocadetroit.org</a></p>
+					<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/MoCAD.jpg"width="150">
+						<p><strong>Mike Kelley: MOBILE HOMESTEAD</strong>
+						<br />through 7/28
+
+	</div>
+	<!--#17 MOCAT-->			
+				<div class="sidecontent">
+					<h2><a href="javascript:showEvent(17)">17</a> MUSEUM OF CONTEMPORARY ART TUCSON</h2>
+					<p class="pink"><a href="http://www.moca-tucson.org">www.moca-tucson.org</a></p>
+					<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/MOCATucson.jpg"width="200">
+					<p>Great Hall: <strong>Chico MacMurtrie: Chrysalis</strong><br />
+					East Wing: <strong>Ken Shorr: The Tucson Years</strong><br />
+					5/25 – 9/23 
+	</div>								
+				<!--#18 Parrish-->
+							<div class="sidecontent">
+							<h2><a href="javascript:showparrish(18)">18</a> PARRISH ART MUSEUM</h2>
+							<p class="pink"><a href="http://www.parrishart.org/">parrishart.org/</a>
+							<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/Parrish.jpg" width="200">
+
+								<p><strong>Platform: Josephine Meckseper</strong> 
+								<br />July 4 – October 14, 2013
+								
+								<p><strong>Angels, Demons, and Savages: Pollock, Ossorio, Dubuffet</strong> 
+								<br />July 21 – October 27
+								
+								<p><strong>Michelle Stuart: Drawn from Nature</strong> 
+								<br />July 13, 2013 – October 27
+								
+								<p><strong>Parrish Road Show: Sydney Albertini—And Also, I Have No Idea</strong>
+								<br />August 11 – September 2
+								
+								<p><strong>Parrish Road Show: Almond Zigmund—Interruptions Repeated</strong>
+								<br />August 25 – September 10
+								
+
+							</div>
+				<!--#19 Pulitzer-->				
+							<div class="sidecontent">
+							<h2><a href="javascript:showEvent(19)">19</a> The Pulitzer Foundation for the Arts</h2>
+							<p class="pink"><a href="http://www.pulitzerarts.org">http://www.pulitzerarts.org</a>
+						<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/13_pulitzerfoundation.jpg" width="300">
+						<p><strong>Donald Judd: The Multicolored Works</strong><br/>  
+						May 10, 2013 – January 4, 2014
+							</div>
+							
+				
+				<!--#20 Smith-->			
+							<div class="sidecontent">	
+								<h2><a href="javascript:showEvent(20)">20</a> SMITH COLLEGE MUSEUM OF ART</h2>
+								<p class="pink"><a href="http://www.smith.edu/artmuseum">smith.edu/artmuseum</a>
+								<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/18_smith.jpg" width="200px">
+								<p>	<strong>Summer of Love: Psychedelic Posters from SCMA</strong>
+								<br />June 14 – September 15, 2013
+							
+								<p><strong>Framework IX: Restoring the Boundaries </strong>
+								<br />May 10– November 3, 2013
+									
+							</div>
+							<!--#21 SECCA-->			
+										<div class="sidecontent">	
+											<h2><a href="javascript:showsecca(21)">21</a> SOUTHEASTERN CENTER FOR CONTEMPORARY ART</h2>
+											<p class="pink"><a href="http://www.secca.org">www.secca.org</a>
+											<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/SECCA.jpg" width="75px">
+											<p>	<strong>Tomory Dodge & Denyse Thomasos: Directions to a Dirty Place</strong>
+											<br />3/22 – 9/1
+
+											<p><strong>Hedieh Javanshir Ilchi: A leaf from my rose garden</strong>
+											<br />6/21 – 9/1
+											<p><strong>reGeneration2: Tomorrow’s Photographers Today</strong>
+											<br />6/21 – 9/15
+										</div>
+				<!--#22 WALKER-->			
+							<div class="sidecontent">	
+							<h2><a href="javascript:showwalk(22)">22</a> WALKER ART CENTER</h2>
+							<p class="pink"><a href="http://www.walkerart.org">www.walkerart.org</a>
+							<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/19_walker.jpg" width="250px">
+							<p><strong>Artist-Designed Mini Golf</strong>
+							<br />May 23 – September 8, 2013
+							
+							<p><strong>Painter Painter</strong>
+								<br /> Through October 27, 2013
+							<p><strong>Abraham Cruzvillegas: The Autoconstrucción Suites</strong>
+								<br />Through 9/22
+							<p><strong>The Museum of Non Participation: The New Deal</strong>
+								<br />Through July 14
+							
+							</div>
+				<!--#23 Weatherspoon-->			
+						<div class="sidecontent">	
+							<h2><a href="javascript:showEvent(23)">23</a> WEATHERSPOON ART MUSEUM</h2>
+							<p class="pink"><a href="http://weatherspoon.uncg.edu">http://weatherspoon.uncg.edu</a>
+							<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/weatherspoon.jpg" width="300px">
+							
+							<p><strong>The Penetrating Gaze</strong>
+							<br />Through 6/16
+
+							<p><strong>Head to Head</strong>
+							<br />Through 6/23
+							
+							<p><strong>the kids are all right:  an exhibition about family and photography</strong>
+							<br />6/1 – 8/18
+							
+							<p><strong>Arlene Shechet: That Time</strong>
+							<br />6/15 – 9/15
+							
+							<p><strong>Art History: Redux</strong>
+							<br />6/29 – 10/20
+							
+							<p><strong>Resolutely Matisse</strong>
+							<br />7/6 – 9/29
+							
+							<p><strong>Nira Pereg: Abraham Abraham / Sarah Sarah</strong>
+							<br />6/15 – 9/15
+
+										</div>
+										
+										<!--#24 Yerba Buena-->			
+												<div class="sidecontent">	
+													<h2><a href="javascript:showEvent(24)">24</a> YERBA BUENA CENTER FOR THE ARTS</h2>
+													<p class="pink"><a href="http://www.ybca.org">http://www.ybca.org</a>
+													<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/yerbabuena.jpg" width="100px">
+
+													<p><strong>Migrating Identities</strong>
+													<br />6/28 – 9/29
+
+													<p><strong>Kota Ezawa: Boardwalk</strong>
+													<br />6/28/13 – November 2015
+
+													<p><strong>Thiago Rocha Pitta: The Domain of Silence</strong>
+													<br />7/12 – 9/8
+
+
+																</div>
+																
+												
+
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+
+				</div>
+
+
+
+			  </body>
+			</html>
