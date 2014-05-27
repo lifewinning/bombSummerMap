@@ -1,87 +1,11 @@
-<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" 
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>BOMB's Summer Road Trip Map</title>
-
-<!-- bootstrap components in a desperate attempt to make this look less terrible -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-
-<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery.js"></script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-<script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAALbV-jKVyIRdXg_99IchOiRRNufXvIPiOuZ0FK-E0W0iHou6s7xRkitUpx0peCZmGh5Wk8L5bZX9e-w" type="text/javascript"></script>
-    <script type="text/javascript" src="mapad2013.js">
-    </script>
-<!-- <link rel="stylesheet" type="text/css" href="style.css" />
- -->
- <!-- custom css -->
-<link rel="stylesheet" href="style.css">
-  </head>
-  <body onload="load()" onunload="GUnload()" onresize="boundsChanged()">
-	<body style="overflow: hidden">
-			<div class="row" id="header">
-			<div class="container">
-			<h1>BOMB SUMMER ROAD TRIP MAP</h1> 
-			<h3>Highlighting Exhibition and Cultural Events across the USA</h3>
-			<p>
-			<!-- here's a bunch of bespoke links that make me want to die inside -->
-
-			<a href="javascript:showEvent(1)">Aldrich Museum</a> |
-			<a href="javascript:showEvent(2)">The Andy Warhol Museum</a> |
-			<a href="javascript:showEvent(3)">ASPEN ART MUSEUM</a> |
-			<a href="javascript:showEvent(4)">Atlanta Contemporary Art Center</a> |
-			<a href="javascript:showEvent(5)">BLAFFER ART MUSEUM UNIVERSITY OF HOUSTON</a> |
-			<a href="javascript:showEvent(6)">THE BOWDOIN COLLEGE MUSEUM OF ART </a> |
-			<a href="javascript:showEvent(7)">Eli and Edythe Broad Art Museum </a> |
-			<a href="javascript:showEvent(8)">COLBY COLLEGE MUSEUM OF ART</a> |	
-			<a href="javascript:showEvent(9)">CONTEMPORARY ART MUSEUM ST. LOUIS</a> |
-			<a href="javascript:showEvent(10)">Contemporary Arts Museum Houston</a> |
-			<a href="javascript:showEvent(11)">DIA: The Dan Flavin Art Institute</a> |
-			<a href="javascript:showEvent(12)">Frederik Meijer Gardens & Sculpture Park</a> |
-			<a href="javascript:showEvent(13)">Falling Water</a> |
-			<a href="javascript:showEvent(14)">Frist Center for the Visual Arts</a> |
-			<a href="javascript:showEvent(15)">The Glass House</a> | 
-			<a href="javascript:showEvent(16)">International Center of Photography</a> |
-			<a href="javascript:showEvent(17)">The Kemper Museum</a> |
-			<a href="javascript:showEvent(18)">Memphis Brooks Museum of Art</a> |
-			<a href="javascript:showEvent(19)">THE MENIL COLLECTION</a> |
-			<a href="javascript:showEvent(20)">MUSEUM OF CONTEMPORARY ART DETROIT</a> |
-			<a href="javascript:showEvent(21)">PARRISH ART MUSEUM</a> |
-			<a href="javascript:showEvent(22)">Portland Museum of Art</a> |
-			<a href="javascript:showEvent(23)">The Pulitzer Foundation for the Arts</a> |
-			<a href="javascript:showEvent(24)">SMITH COLLEGE MUSEUM OF ART</a> |
-			<a href="javascript:showEvent(25)">WALKER ART CENTER</a> |
-			<a href="javascript:showEvent(26)">Yerba Buena Center for the Arts</a> 
-				</p>
-				</div>
-			</div> 
-			<div id="map"></div>
-			<div class="row" id="directionsWrap">
-				<div class="container">
-					<div id="directions" class="col-md-12">
-					</div>
-				</div>
-			</div>
-			
-
-<!--Event Windows, Why Would Anyone Write Code Like This, Why Why Why-->
 <div id="eventMarkers" class="infoWindow">
 
 <!--#1-->		
 	<div id="event1">
 		<div class="infoWindowContent">
-			<h2><a href="">01</a> ALDRICH MUSEUM</h2>
+			<h2><a href="">01</a>ALDRICH MUSEUM</h2>
 			<p class="pink"><a href="www.aldrichart.org">www.aldrichart.org</a></p>
-				<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/1_Aldrich.jpg" width="350px">
+				<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/andywarhol.jpg" width="350px">
 				<p>
 				Exhibitions through September 21, 2014:<br>
 				<strong><em>Standing in the Shadows of Love: The Aldrich Collection 1964–1974</em></strong><br>
@@ -105,7 +29,7 @@
 <!--#2-->		
 	<div id="event2">
 		<div class="infoWindowContent">
-			<h2><a href="">02</a> Andy Warhol Museum</h2>
+			<h2><a href="">02</a>Andy Warhol Museum</h2>
 			<p class="pink"><a href="http://www.warhol.org">www.warhol.org</a></p>
 				<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/andywarhol.jpg" width="350px">
 				<p>
@@ -133,7 +57,7 @@
 			</p><p>
 			NOTE: Ernesto Neto’s AAM exhibition will be the last to be featured in the museum’s current facility. The artist is also the recipient of the AAM’s 2014 Aspen Award for Art, which will be presented on August 2, 2014 during the museum’s annual summer ArtCrush benefit event.
 			</p>
-			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/aspen.jpg" width="360px"><br>
+			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/2_aspen.jpg" width="360px"><br>
 			<p>
 			<strong>NEW AAM FACILITY DEBUT EXHIBITIONS</strong><br>
 			637 E Hyman Avenue, Aspen
@@ -189,7 +113,7 @@
 		<div class="infoWindowContent">
 			<h2><a href="">04</a> Atlanta Contemporary Art Center</h2>
 			<p class="pink"><a href="http://thecontemporary.org/">thecontemporary.org/</a>
-			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/Atlanta.jpg" width="360px">	
+			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/2_aspen.jpg" width="360px">	
 			<p>
 			<strong><em>9/50: A Southeast Arts Presenters Summit</em></strong><br>
 			hosted by Atlanta Contemporary Art Center<br>
@@ -262,7 +186,7 @@
 		<div class="infoWindowContent">
 			<h2><a href="">06</a> THE BOWDOIN COLLEGE MUSEUM OF ART</h2>
 			<p class="pink"><a href="http://www.bowdoin.edu/art-museum/">bowdoin.edu/art-museum/</a>
-			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/bowdoin-college-museum-of-art-logo.jpg" width="100px">
+			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/Blafferlogo.jpg" width="100px">
 			<p>
 			<strong><em>It’s What You Do With What You View”: Selections from the Dorothy and Herbert Vogel Collection at the Bowdoin College Museum of Art</em></strong><br>
 			June 27, 2014 - September 14, 2014<br>
@@ -290,7 +214,7 @@
 		<div class="infoWindowContent">
 			<h2><a href="">07</a> Eli and Edythe Broad Art Museum</h2>
 			<p class="pink"><a href="http://broadmuseum.msu.edu">broadmuseum.msu.edu</a>
-			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/Broad.jpg" width="100px">
+			<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/Blafferlogo.jpg" width="100px">
 			<p>
 			<strong><em>Postscript: Writing After Conceptual Art</em></strong><br>
 			March 21 – September 21
@@ -368,7 +292,7 @@
 			<div class="infoWindowContent">
 				<h2><a href="">10</a> CONTEMPORARY ARTs MUSEUM Houston</h2>
 				<p class="pink"><a href="http://www.camh.org">www.camh.org</a>
-				<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/CAMH.jpg" width="200px">
+				<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/CAMSTL.jpg" width="200px">
 				<p>
 				<strong><em>Trenton Doyle Hancock: Skin and Bones, 20 Years of Drawing</em></strong><br>
 				April 27 – August 3
@@ -417,12 +341,12 @@
 					<input id="fromAddress" type="text" name="from" size="25"/>
 					<input id="toAddress" type="text" value="1000 East Beltline Ave. NE, Grand Rapids, MI 49525" name="to" size="25"/>
 					<input type="submit" value="Get Directions" name="submit"/>
-			</form>
+				</form>
 			</p>
 		</div>	
 	</div>
 <!--#13 Falling Water-->	
-	<div id="event13">
+	<div class="event13">
 		<div class="infoWindowContent">
 		<h2><a href="">13</a> Falling Water</h2>
 		<p class="pink"><a href="http://www.fallingwater.org">www.fallingwater.org</a></p>
@@ -436,11 +360,11 @@
 		</div>
 	</div>
 <!--#14 Frist-->	
-	<div id="event14">
+	<div class="event14">
 		<div class="infoWindowContent">
 		<h2><a href="">14</a> Frist Center for the Visual Arts</h2>
 		<p class="pink"><a href="http://www.fristcenter.org">www.fristcenter.org</a></p>
-		<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/frist.jpg" width="200">
+		<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/8_fallingwater.jpg" width="200">
 		<p>
 			<strong><em>Watch Me Move: The Animation Show</em></strong><br>
 			June 6–Sept. 1, 2014<br>
@@ -470,11 +394,10 @@
 		</div>
 	</div>
 <!--#15 Glass House-->	
-	<div id="event15">
+	<div class="event15">
 		<div class="infoWindowContent">
 		<h2><a href="">15</a> The Glass House</h2>
 		<p class="pink"><a href="http://www.theglasshouse.org">www.theglasshouse.org</a></p>
-		<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/glasshouse.jpg" width="200">
 		<p><strong><em>Fujiko Nakaya: Veil fog installation</em></strong><br>                                         
 		May 1 to November 30, 2014
 		</p><p>
@@ -519,7 +442,7 @@
 		<div class="infoWindowContent">
 		<h2><a href="">17</a> Kemper Museum</h2>
 		<p class="pink"><a href="https://www.kemperart.org">www.kemperart.org</a>
-		<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/Kemper.jpg" width="300">
+		<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/ICP.jpg" width="300">
 		<p>
 			<strong><em>Conversations—Marking 20 Years</em></strong><br>
 			May 16–September 21, 2014<br><br>
@@ -537,7 +460,7 @@
 		<div class="infoWindowContent">
 		<h2><a href="">18</a> Memphis Brooks Museum of Art</h2>
 		<p class="pink"><a href="http://www.brooksmuseum.org">www.brooksmuseum.org</a>
-		<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/MemphisBrooksLogo.jpg" width="300">
+		<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/ICP.jpg" width="300">
 		<p>
 			<strong><em>Marisol: Sculpture and Works on Paper</em></strong><br>
 			June 14 – September 7, 2014<br><br>
@@ -626,7 +549,7 @@
 		<div class="infoWindowContent">
 		<h2><a href="">22</a> Portland Museum of Art</h2>
 		<p class="pink"><a href="http://www.portlandmuseum.org">www.portlandmuseum.org/</a>
-		<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/Portland.jpg" width="200">
+		<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/Parrish.jpg" width="200">
 			<p>
 			<strong><em>George Daniell: Picturing Monhegan Island</em></strong><br>
 			through August 3, 2014</p><p>
@@ -721,10 +644,10 @@
 		</form></p>
 		</div>
 	</div>
-<!--#26 Yerba Buena -->
-	<div id="event26">		
+<!--#24 Yerba Buena -->
+	<div id="event24">		
 		<div class="infoWindowContent">	
-		<h2><a href="">26</a> Yerba Buena Center for the Arts</h2>
+		<h2><a href="">24</a> Yerba Buena Center for the Arts</h2>
 		<p class="pink"><a href="http://www.ybca.org">http://www.ybca.org</a></p>
 		<img src="http://bombsite.powweb.com/wp-content/themes/sandbox/weblogossmall/yerbabuena.jpg" width="100px">
 		<p>
@@ -742,13 +665,3 @@
 		</div>	
 	</div>	
 </div>
-</div>
-</div>
-</div>
-
-</div>
-
-
-
-</body>
-</html>
