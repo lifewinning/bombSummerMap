@@ -101,4 +101,3 @@ event.marker.openInfoWindow(event.content);
 function setDirections(fromAddress, toAddress) {
 gdir.load("from: " + fromAddress + " to: " + toAddress);
 }
-

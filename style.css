@@ -4,7 +4,27 @@
   margin-right: 0;
 }
 
+.navbar{
+  margin-bottom: 0!important;
+}
+
+.dropdown-menu li a {
+  line-height: 1.2!important;
+}
+
+.dropdown-menu li a:active, li a:hover, li a:focus{
+  color: #FF00B1!important;
+}
+.nav li, .navbar-nav li{
+  text-transform: lowercase!important;
+}
+
 /*other things*/
+.title{
+  color: #FF00B1!important;
+  font-weight: 700;
+}
+
 #header{
   width: 100%;
   background-color: white;
@@ -40,14 +60,14 @@
 
 #map{
   position: relative;
-  height: 90%;
+  height: 100%;
 /*  bottom:0;*/
   width:100%;
   left:0;
 }
 #directionsWrap{
   background-color: white;
-  max-height: 25%;
+  max-height: 33.333%;
   overflow: auto;
   position:fixed;
   bottom: 0;  
@@ -198,8 +218,6 @@
   margin:10px 0 10px 0;
 }
 
-
-
-#pod_audio_1 {
-  margin-bottom: 5px;
+#close{
+  text-align: right;
 }
