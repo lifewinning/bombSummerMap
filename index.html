@@ -40,92 +40,51 @@
       <span class="navbar-brand title">BOMB SUMMER ROAD TRIP MAP</span>
        <span class="navbar-brand">Highlighting Exhibition and Cultural Events across the USA</span>
     </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-       
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Click to view map index<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="javascript:showEvent(1)">1. Aldrich Museum</a></li>
-            <li><a href="javascript:showEvent(2)">2. The Andy Warhol Museum</a></li>
-            <li><a href="javascript:showEvent(3)">3. ASPEN ART MUSEUM</a></li>
-            <li><a href="javascript:showEvent(4)">4. Atlanta Contemporary Art Center</a></li>
-            <li><a href="javascript:showEvent(5)">5. BLAFFER ART MUSEUM UNIVERSITY OF HOUSTON</a></li>
-            <li><a href="javascript:showEvent(6)">6. THE BOWDOIN COLLEGE MUSEUM OF ART </a> </li>
-            <li><a href="javascript:showEvent(7)">7. Eli and Edythe Broad Art Museum </a> </li>
-            <li><a href="javascript:showEvent(8)">8. COLBY COLLEGE MUSEUM OF ART</a></li>
-            <li><a href="javascript:showEvent(9)">9. CONTEMPORARY ART MUSEUM ST. LOUIS</a></li>
-            <li><a href="javascript:showEvent(10)">10. Contemporary Arts Museum Houston</a></li>
-            <li><a href="javascript:showEvent(11)">11. DIA: The Dan Flavin Art Institute</a></li>
-            <li><a href="javascript:showEvent(12)">12. Frederik Meijer Gardens & Sculpture Park</a></li>
-            <li><a href="javascript:showEvent(13)">13. Falling Water</a> </li>
-            <li><a href="javascript:showEvent(14)">14. Frist Center for the Visual Arts</a>  </li>
-            <li><a href="javascript:showEvent(15)">15. The Glass House</a> </li>
-            <li><a href="javascript:showEvent(16)">16. International Center of Photography</a></li>
-            <li><a href="javascript:showEvent(17)">17. The Kemper Museum</a></li>
-            <li><a href="javascript:showEvent(18)">18. Memphis Brooks Museum of Art</a></li>
-            <li><a href="javascript:showEvent(19)">19. THE MENIL COLLECTION</a></li>
-            <li><a href="javascript:showEvent(20)">20. MUSEUM OF CONTEMPORARY ART DETROIT</a></li>
-            <li><a href="javascript:showEvent(21)">21. PARRISH ART MUSEUM</a></li>
-            <li><a href="javascript:showEvent(22)">22. Portland Museum of Art</a> </li>
-            <li><a href="javascript:showEvent(23)">23. The Pulitzer Foundation for the Arts</a> </li>
-            <li><a href="javascript:showEvent(24)">24. SMITH COLLEGE MUSEUM OF ART</a></li>
-			<li><a href="javascript:showEvent(25)">25. WALKER ART CENTER</a></li>
-            <li><a href="javascript:showEvent(26)">26. Yerba Buena Center for the Arts</a> </li>
-
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+  </div>
 </nav>
-
-<!-- <div class="row" id="header">
+<div class="row" id="mapRow">
+	<div class="col-md-3">
+	<div id="sidebar">
+	<ol>
+    <li><a href="javascript:showEvent(1)">Aldrich Museum</a></li>
+    <li><a href="javascript:showEvent(2)">The Andy Warhol Museum</a></li>
+    <li><a href="javascript:showEvent(3)">ASPEN ART MUSEUM</a></li>
+    <li><a href="javascript:showEvent(4)">Atlanta Contemporary Art Center</a></li>
+    <li><a href="javascript:showEvent(5)">BLAFFER ART MUSEUM UNIVERSITY OF HOUSTON</a></li>
+    <li><a href="javascript:showEvent(6)">THE BOWDOIN COLLEGE MUSEUM OF ART </a> </li>
+    <li><a href="javascript:showEvent(7)">Eli and Edythe Broad Art Museum </a> </li>
+    <li><a href="javascript:showEvent(8)">COLBY COLLEGE MUSEUM OF ART</a></li>
+    <li><a href="javascript:showEvent(9)">CONTEMPORARY ART MUSEUM ST. LOUIS</a></li>
+    <li><a href="javascript:showEvent(10)">Contemporary Arts Museum Houston</a></li>
+    <li><a href="javascript:showEvent(11)">DIA: The Dan Flavin Art Institute</a></li>
+    <li><a href="javascript:showEvent(12)">Frederik Meijer Gardens & Sculpture Park</a></li>
+    <li><a href="javascript:showEvent(13)">Falling Water</a> </li>
+    <li><a href="javascript:showEvent(14)">Frist Center for the Visual Arts</a>  </li>
+    <li><a href="javascript:showEvent(15)">The Glass House</a> </li>
+    <li><a href="javascript:showEvent(16)">International Center of Photography</a></li>
+    <li><a href="javascript:showEvent(17)">The Kemper Museum</a></li>
+    <li><a href="javascript:showEvent(18)">Memphis Brooks Museum of Art</a></li>
+    <li><a href="javascript:showEvent(19)">THE MENIL COLLECTION</a></li>
+    <li><a href="javascript:showEvent(20)">MUSEUM OF CONTEMPORARY ART DETROIT</a></li>
+    <li><a href="javascript:showEvent(21)">PARRISH ART MUSEUM</a></li>
+    <li><a href="javascript:showEvent(22)">Portland Museum of Art</a> </li>
+    <li><a href="javascript:showEvent(23)">The Pulitzer Foundation for the Arts</a> </li>
+    <li><a href="javascript:showEvent(24)">SMITH COLLEGE MUSEUM OF ART</a></li>
+	<li><a href="javascript:showEvent(25)">WALKER ART CENTER</a></li>
+    <li><a href="javascript:showEvent(26)">Yerba Buena Center for the Arts</a> </li>
+	</ol>
+	</div>
+	</div>
+	<div class="col-md-9" id="mapwrap">
+	<div id="map"></div>
+	</div>
+</div>
+<div class="row" id="directionsWrap">
 	<div class="container">
-	<h1>BOMB SUMMER ROAD TRIP MAP</h1> 
-	<h3>Highlighting Exhibition and Cultural Events across the USA</h3>
-	<p> -->
-	<!-- here's a bunch of bespoke links that make me want to die inside -->
-<!-- 
-	<a href="javascript:showEvent(1)">Aldrich Museum</a> |
-	<a href="javascript:showEvent(2)">The Andy Warhol Museum</a> |
-	<a href="javascript:showEvent(3)">ASPEN ART MUSEUM</a> |
-	<a href="javascript:showEvent(4)">Atlanta Contemporary Art Center</a> |
-	<a href="javascript:showEvent(5)">BLAFFER ART MUSEUM UNIVERSITY OF HOUSTON</a> |
-	<a href="javascript:showEvent(6)">THE BOWDOIN COLLEGE MUSEUM OF ART </a> |
-	<a href="javascript:showEvent(7)">Eli and Edythe Broad Art Museum </a> |
-	<a href="javascript:showEvent(8)">COLBY COLLEGE MUSEUM OF ART</a> |	
-	<a href="javascript:showEvent(9)">CONTEMPORARY ART MUSEUM ST. LOUIS</a> |
-	<a href="javascript:showEvent(10)">Contemporary Arts Museum Houston</a> |
-	<a href="javascript:showEvent(11)">DIA: The Dan Flavin Art Institute</a> |
-	<a href="javascript:showEvent(12)">Frederik Meijer Gardens & Sculpture Park</a> |
-	<a href="javascript:showEvent(13)">Falling Water</a> |
-	<a href="javascript:showEvent(14)">Frist Center for the Visual Arts</a> |
-	<a href="javascript:showEvent(15)">The Glass House</a> | 
-	<a href="javascript:showEvent(16)">International Center of Photography</a> |
-	<a href="javascript:showEvent(17)">The Kemper Museum</a> |
-	<a href="javascript:showEvent(18)">Memphis Brooks Museum of Art</a> |
-	<a href="javascript:showEvent(19)">THE MENIL COLLECTION</a> |
-	<a href="javascript:showEvent(20)">MUSEUM OF CONTEMPORARY ART DETROIT</a> |
-	<a href="javascript:showEvent(21)">PARRISH ART MUSEUM</a> |
-	<a href="javascript:showEvent(22)">Portland Museum of Art</a> |
-	<a href="javascript:showEvent(23)">The Pulitzer Foundation for the Arts</a> |
-	<a href="javascript:showEvent(24)">SMITH COLLEGE MUSEUM OF ART</a> |
-	<a href="javascript:showEvent(25)">WALKER ART CENTER</a> |
-	<a href="javascript:showEvent(26)">Yerba Buena Center for the Arts</a> 
-		</p>
+		<div id="directions" class="col-md-12">
 		</div>
-	</div>  -->
-			<div id="map"></div>
-			<div class="row" id="directionsWrap">
-				<div class="container">
-					<div id="directions" class="col-md-12">
-					</div>
-				</div>
-			</div>
-			
+	</div>
+</div>
 
 <!--Event Windows, Why Would Anyone Write Code Like This, Why Why Why-->
 <div id="eventMarkers" class="infoWindow">

@@ -6,16 +6,34 @@
 
 .navbar{
   margin-bottom: 0!important;
+  -moz-box-shadow: 5px 5px 5px #ff00b1!important;
+  -webkit-box-shadow: 5px 5px 5px #ff00b1!important;
+  box-shadow: 5px 5px 5px #ff00b1!important;
+  z-index: 5;
 }
 
-.dropdown-menu li a {
-  line-height: 1.2!important;
+#mapRow{
+  background-color: #eee;
+}
+.col-md-3{
+  margin-top: 2.5%!important;
+  margin-bottom: 2.5%!important
+}
+#sidebar{
+  max-height: 90%;
+  overflow: auto!important;
+  padding-bottom: 400%;
 }
 
-.dropdown-menu li a:active, li a:hover, li a:focus{
+#sidebar li a {
+  color: black!important;
+  font-weight: 700;
+}
+
+#sidebar li a:active, li a:hover, li a:focus{
   color: #FF00B1!important;
 }
-.nav li, .navbar-nav li{
+#sidebar li{
   text-transform: lowercase!important;
 }
 
@@ -25,54 +43,22 @@
   font-weight: 700;
 }
 
-#header{
-  width: 100%;
-  background-color: white;
-  border: 5px solid #ff00b1;
-  -moz-box-shadow: 5px 5px 5px #ff00b1;
-  -webkit-box-shadow: 5px 5px 5px #ff00b1;
-  box-shadow: 5px 5px 5px #ff00b1;
+#mapwrap{
+  padding-right: 0px!important;
 }
-
-#header h1{
-  color: #ff00b1;
-  font-weight: 800;
-  text-align: center;
-}
-
-#header h3{
-  text-align: center;
-}
-
-#header p{
-  text-align: center;
-  text-transform: lowercase;
-  font-size: .75em;
-
-}
-#header a{
-  color: #ff00b1;
-}
-#header a:hover{
-  color: black;
-}
-
 
 #map{
-  position: relative;
-  height: 100%;
-/*  bottom:0;*/
+  height: 95%;
   width:100%;
-  left:0;
 }
 #directionsWrap{
   background-color: white;
-  max-height: 33.333%;
+  max-height: 25%;
   overflow: auto;
   position:fixed;
   bottom: 0;  
   width: 100%;
-  /*z-index:2;*/
+  border-top: 5px solid #ff00b1!important;
 }
 
 #directions {
@@ -94,34 +80,6 @@
   font-family:helvetica, arial, sans-serif;
 }
 
-
-.mapContainer{
-  display:block;
-  position:relative;
-  width:400px;
-  margin:-10px 0 0 -11px;
-  background-color:#fff;
-  padding:1px 0 0 0;
-}
-
-.mapheader{  
-  margin:10px 0 0 0;
-
-}
-.mapBody{
-  padding:3px 23px 0 9px;
-  max-height:320px;
-  min-height:320px;
-  overflow:auto;
-}
-
-.img-shadow {
-  float:left;
-  width:400px;
-  min-height:360px;
-  background: url(http://bombsite.powweb.com/logos/topshadow.png) no-repeat bottom right;
-  margin:10px 0 0 10px;
-  }
 
 #center{
   text-align:center;
